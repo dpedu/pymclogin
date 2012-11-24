@@ -41,7 +41,7 @@ class AuthThread(threading.Thread):
 			pID = self.read_unsigned_byte()
 			# Ping packet (from client server list)
 			if pID == 0xFE:
-				self.sock.send( packeter.build( [("id",0xFF), ("strping","\xa71\x0049\x001.4.4\x00Minecraft Auth Server\x000\x001")] ) )
+				self.sock.send( packeter.build( [("id",0xFF), ("strping","\xa71\x0049\x001.4.5\x00Minecraft Login Server\x000\x001")] ) )
 				self.socket.close()
 				return
 			# Handshake packet
