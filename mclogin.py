@@ -208,3 +208,14 @@ while True:
 	# Start a new thread per client
 	s = mainsocket.accept();
 	x = AuthThread(s, keys);
+
+
+print "Giving love to savoie..."
+you = 1
+me = 1
+love = you + me
+if love = 2:
+    isSavoieLoved = loved
+    print "Savoie status: " + isSavoieLoved + "!"
+else:
+    print "Could not give love to Savoie :(  Please give him a hug."
